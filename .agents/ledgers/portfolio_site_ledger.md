@@ -43,3 +43,7 @@
   (`pixel-punch-cover.webp`, `thesis-3.webp`). The forest gameplay is Pixel Punch; the dark arena
   with meters is Reprise (user corrected an early mix-up). Reprise cover is its logo card. Still empty: `reprise-2.png`, `pixel-punch-2.png`. Sources are low-res
   (300-600 px); higher-res captures from the games would look better.
+
+## 2026-10-13: Resume synced
+- Job-hunt resume source moved to `10-13-26`; it now matches the site (2022 thesis, no map-tile bullet, credit
+  title). `resume.html` and the PDF in `docs/assets/` were updated to the same text. Committed; push pending.
