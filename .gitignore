@@ -1,0 +1,14 @@
+# Claude Code: skill junctions and per-user local state
+.claude/skills/
+.claude/settings.local.json
+CLAUDE.local.md
+
+# Scratch exports
+outputs/
+
+# OS and editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

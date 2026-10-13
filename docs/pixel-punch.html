@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pixel Punch · Pierre Carlo Ramos</title>
+  <meta name="description" content="Pixel Punch, a solo Unity fighting-game prototype in the style of One Finger Death Punch.">
+  <link rel="canonical" href="https://pierreramos.github.io/pixel-punch.html">
+  <meta property="og:title" content="Pixel Punch · Pierre Carlo Ramos">
+  <meta property="og:description" content="Pixel Punch, a solo Unity fighting-game prototype in the style of One Finger Death Punch.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pierreramos.github.io/pixel-punch.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2312161c'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%235fd0a8' text-anchor='middle'%3EPR%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try { if (localStorage.getItem("theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}</script>
+</head>
+<body data-section="index.html">
+<a class="skip-link" href="#content">Skip to content</a>
+<div class="layout">
+  <header class="sidebar">
+    <a class="name" href="index.html">Pierre Carlo Ramos</a>
+    <p class="role">Unity Gameplay &amp; UI Programmer</p>
+    <p class="tagline">I build gameplay systems and game UI in Unity, and draw the pixel art for my own games.</p>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="sidebar-footer">
+      <ul class="social">
+        <li><a href="https://github.com/PierreRamos">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/pierrecarloramos">LinkedIn</a></li>
+        <li><a href="https://pierrymarbles.itch.io">itch.io</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-pressed="false">Light mode</button>
+    </div>
+  </header>
+  <main id="content">
+    <a class="back" href="index.html">← All projects</a>
+    <header class="page-head">
+      <p class="note">Personal prototype · 2023</p>
+      <h1>Pixel Punch</h1>
+      <p class="lead">A solo fighting-game prototype in the style of <i>One Finger Death Punch</i>.</p>
+    </header>
+    <figure class="shot hero-shot" data-file="pixel-punch-cover.png"><img src="assets/img/pixel-punch-cover.png" alt="Pixel Punch key art" loading="lazy"></figure>
+    <dl class="facts"><div><dt>Role</dt><dd>Solo: code and art</dd></div><div><dt>Engine</dt><dd>Unity, C#</dd></div><div><dt>Year</dt><dd>2023</dd></div><div><dt>Status</dt><dd>Prototype, back in development</dd></div></dl>
+    <section class="prose">
+        <h2>Overview</h2>
+        <p>Pixel Punch is a 2D brawler inspired by <i>One Finger Death Punch</i>: enemies rush in from both sides and
+        every input counts. I wrote all of the code and drew and animated every sprite.</p>
+        <h2>What I built</h2>
+        <ul>
+          <li>All gameplay logic: player attacks, dash, health and a special meter.</li>
+          <li>Enemy spawning driven by a difficulty manager, with object pooling for enemies and particle effects.</li>
+          <li>Enemy variants, including elites that can't be beaten with a single hit: each one carries nodes, and
+              every node starts its own short minigame the player has to clear to bring it down.</li>
+          <li>A one-on-one hold-battle mode with its own timer and input prompts.</li>
+          <li>Game feel: camera shake, hit indicators and pooled particle effects.</li>
+          <li>An event-driven architecture that keeps player, enemy and UI systems decoupled.</li>
+        </ul>
+        <h2>What's next</h2>
+        <p>I'm back to work on Pixel Punch and aiming to take it from prototype to a finished game.</p>
+    </section>
+      <section aria-labelledby="links"><h2 id="links">Links</h2><ul class="links"><li><a class="button primary" href="https://pierrymarbles.itch.io/punch-game">Download on itch.io ↗</a></li><li><a class="button" href="https://github.com/PierreRamos/PixelPunch">Source on GitHub ↗</a></li></ul></section>
+    <section aria-labelledby="gallery">
+      <h2 id="gallery">Screenshots</h2>
+      <div class="gallery"><figure class="shot" data-file="pixel-punch-1.png"><img src="assets/img/pixel-punch-1.png" alt="Pixel Punch screenshot" loading="lazy"></figure><figure class="shot" data-file="pixel-punch-2.png"><img src="assets/img/pixel-punch-2.png" alt="Pixel Punch screenshot" loading="lazy"></figure></div>
+    </section>
+    <footer class="site-footer">© 2026 Pierre Carlo Ramos · Hand-built with HTML, CSS and a little JavaScript.</footer>
+  </main>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
