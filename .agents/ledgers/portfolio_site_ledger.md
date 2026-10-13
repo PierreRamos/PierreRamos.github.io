@@ -40,5 +40,6 @@
   job-hunt resume source still carry that bullet, the old title and the 2023 thesis year: fix the source, rebuild.
 - Screenshots from the user's old Figma portfolio (public prototype; originals in git-ignored `inputs/figma/`, all
   own work, no MCS). Stills upscaled with nearest-neighbour; gameplay GIFs converted to animated WebP
-  (`reprise-cover.webp`, `thesis-3.webp`). Still empty: `reprise-2.png`, `pixel-punch-2.png`. Sources are low-res
+  (`pixel-punch-cover.webp`, `thesis-3.webp`). The forest gameplay is Pixel Punch; the dark arena
+  with meters is Reprise (user corrected an early mix-up). Reprise cover is its logo card. Still empty: `reprise-2.png`, `pixel-punch-2.png`. Sources are low-res
   (300-600 px); higher-res captures from the games would look better.

@@ -9,8 +9,8 @@ Image slots show their expected filename until the file exists in `docs/assets/i
 
 | Page | Files |
 | --- | --- |
-| Reprise | `reprise-cover.webp` (animated), `reprise-1.png`, `reprise-2.png` |
-| Pixel Punch | `pixel-punch-cover.png`, `pixel-punch-1.png`, `pixel-punch-2.png` |
+| Reprise | `reprise-cover.png`, `reprise-1.png`, `reprise-2.png` |
+| Pixel Punch | `pixel-punch-cover.webp` (animated), `pixel-punch-1.png`, `pixel-punch-2.png` |
 | Smoothie Splash | `smoothie-splash-cover.png`, `smoothie-splash-1.png`, `smoothie-splash-2.png` |
 | Thesis | `thesis-cover.png`, `thesis-1.png`, `thesis-2.png`, `thesis-3.webp` (animated) |
 | Shipped credits (official store art) | `credit-god-of-war.jpg`, `credit-backyard-baseball.jpg` |
