@@ -13,7 +13,7 @@
       toggle.setAttribute("aria-pressed", String(theme === "light"));
       toggle.setAttribute("aria-label", theme === "light" ? "Switch to dark mode" : "Switch to light mode");
     }
-    ditherFields.forEach(drawDither);
+    ditherFields.forEach((field) => (field.redraw ? field.redraw() : drawDither(field)));
   }
 
   if (toggle) {
@@ -114,6 +114,68 @@
     else if (img.complete && img.naturalWidth === 0) markMissing();
     else img.addEventListener("error", markMissing);
   });
+
+  // Backdrop: the same dither in the margins beside the panel, fading in toward the screen edges.
+  const frame = document.querySelector(".frame");
+  if (frame) {
+    const CELL = 5;
+    const canvas = document.createElement("canvas");
+    canvas.className = "backdrop";
+    canvas.setAttribute("aria-hidden", "true");
+    document.body.prepend(canvas);
+    const ctx = canvas.getContext("2d");
+    const backdrop = { w: 0, h: 0, image: null, left: 0, right: 0, mx: -1e4, my: -1e4, time: 0 };
+
+    const resize = () => {
+      backdrop.w = Math.max(1, Math.ceil(innerWidth / CELL));
+      backdrop.h = Math.max(1, Math.ceil(innerHeight / CELL));
+      canvas.width = backdrop.w; canvas.height = backdrop.h;
+      backdrop.image = ctx.createImageData(backdrop.w, backdrop.h);
+      const rect = frame.getBoundingClientRect();
+      backdrop.left = rect.left / CELL; backdrop.right = rect.right / CELL;
+      drawBackdrop();
+    };
+
+    function drawBackdrop() {
+      const { w, h, left, right, time: t } = backdrop;
+      const data = backdrop.image.data;
+      data.fill(0);
+      if (left < 4) { ctx.putImageData(backdrop.image, 0, 0); return; } // no margins on narrow screens
+      const [r, g, b] = inkRGB();
+      for (let y = 0; y < h; y++) {
+        for (let x = 0; x < w; x++) {
+          const out = x < left ? (left - x) / left : x >= right ? (x - right + 1) / (w - right) : 0;
+          if (out <= 0) continue;
+          let v = 0.5 + 0.25 * Math.sin(x * 0.045 + t * 3) * Math.cos(y * 0.06 - t * 2) + 0.2 * Math.sin((x + y) * 0.02 + t * 5);
+          v *= 0.15 + 0.55 * out * out;
+          const dx = x - backdrop.mx, dy = y - backdrop.my;
+          v += 0.4 * Math.exp(-(dx * dx + dy * dy) / 220);
+          if (v > BAYER[(y & 3) * 4 + (x & 3)]) {
+            const i = (y * w + x) * 4;
+            data[i] = r; data[i + 1] = g; data[i + 2] = b; data[i + 3] = 46;
+          }
+        }
+      }
+      ctx.putImageData(backdrop.image, 0, 0);
+    }
+
+    addEventListener("resize", resize);
+    addEventListener("pointermove", (e) => {
+      backdrop.mx = e.clientX / CELL; backdrop.my = e.clientY / CELL;
+      if (reducedMotion) drawBackdrop();
+    }, { passive: true });
+    resize();
+    ditherFields.push({ redraw: drawBackdrop });
+
+    if (!reducedMotion) {
+      let last = 0;
+      const loop = (now) => {
+        if (now - last > 50 && !document.hidden) { backdrop.time += 0.0025; drawBackdrop(); last = now; }
+        requestAnimationFrame(loop);
+      };
+      requestAnimationFrame(loop);
+    }
+  }
 
   applyTheme(root.dataset.theme === "light" ? "light" : "dark");
 })();

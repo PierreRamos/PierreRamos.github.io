@@ -13,6 +13,7 @@ Image slots show their expected filename until the file exists in `docs/assets/i
 | Pixel Punch | `pixel-punch-cover.png`, `pixel-punch-1.png`, `pixel-punch-2.png` |
 | Smoothie Splash | `smoothie-splash-cover.png`, `smoothie-splash-1.png`, `smoothie-splash-2.png` |
 | Thesis | `thesis-cover.png`, `thesis-1.png`, `thesis-2.png` |
+| Shipped credits (official store art) | `credit-god-of-war.jpg`, `credit-backyard-baseball.jpg` |
 
 The `-cover` image appears on the home page and at the top of the project page.
 

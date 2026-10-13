@@ -18,7 +18,8 @@ Own public repo: `PierreRamos/PierreRamos.github.io` (nested in the monorepo, ig
 - Preview: `.claude/launch.json` (`portfolio-site`, port 8765).
 
 ## Rules (hard)
-- Studio work is credits only: title, studio, role. No screenshots, footage, feature details or unreleased titles.
+- Studio work is credits only: title, studio, role, platforms, year, plus official public store art with a ©
+  line. No own screenshots, footage, feature details or unreleased titles (MCS handbook: never discuss projects online).
 - No phone number on any page or in `docs/assets/Ramos_PierreCarlo_Resume.pdf`. Rebuild that PDF from a copy of the
   resume with the phone line removed (headless Edge `--print-to-pdf`), then check it is 1 page with no `+63`.
 - Write only facts from the career profile, the resume or the user. Unknown details stay out; ask instead.

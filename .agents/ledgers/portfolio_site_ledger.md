@@ -27,3 +27,14 @@
   Rafanan; all animation by the user. User also built the enemy AI logic, level design and most player mechanics
   (movement, shooting). `docs/assets/Ramos_PierreCarlo_Resume.pdf` and the job-hunt resume source
   still say 2023 until the source is updated and the PDF rebuilt.
+- Footer is just the copyright. User wants no "how it was built" line: no hand-built claim and no AI mention.
+- Backdrop dither in the side margins (vignette, `.backdrop` canvas in `main.js`); panel is solid. Removed the
+  "credits only" footnote; home "Studio" tile is now "Shipped credits: 2" (keep Mega Cat out of headline facts).
+- Credit research (Oct 2026): God of War: Sons of Sparta, PS5, 12 Feb 2026, Sony Interactive Entertainment with
+  Santa Monica Studio. The 2026 Backyard Baseball is titled just "Backyard Baseball" (Playground Productions),
+  9 Jul 2026 on Windows/macOS, consoles announced. Mega Cat also did Backyard Baseball '97 and '01 remasters.
+  The site's "Backyard Baseball 2026" title needs the user's confirmation. No MobyGames credit page found for the user.
+- Credits now show official store art (PlayStation og:image, Steam capsule) as `credit-*.jpg`, with year, platform
+  and © line; God of War links its MobyGames credits page. Title is "Backyard Baseball (2026)". MCS handbook bans
+  discussing projects online, so the resume page dropped the map-tile loading bullet. The resume PDF and the
+  job-hunt resume source still carry that bullet, the old title and the 2023 thesis year: fix the source, rebuild.

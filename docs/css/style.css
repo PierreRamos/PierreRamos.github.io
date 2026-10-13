@@ -61,7 +61,11 @@ ul { padding-left: 1.1em; }
 @keyframes tick { to { transform: translateX(-100%); } }
 
 /* Frame: every top-level block is a ruled row */
-.frame { max-width: var(--max); margin: 0 auto; border-left: 1px solid var(--line); border-right: 1px solid var(--line); }
+.frame {
+  position: relative; z-index: 1; max-width: var(--max); margin: 0 auto; background: var(--bg);
+  border-left: 1px solid var(--line); border-right: 1px solid var(--line); transition: background 0.35s;
+}
+.backdrop { position: fixed; inset: 0; z-index: 0; width: 100%; height: 100%; pointer-events: none; image-rendering: pixelated; }
 .frame > * { border-bottom: 1px solid var(--line); }
 .frame > p { padding: 20px var(--pad); }
 .row { display: grid; gap: 1px; background: var(--line); }
@@ -217,3 +221,9 @@ dl.skills dt:first-of-type, dl.skills dt:first-of-type + dd { border-top: 0; pad
   .bar, .foot, .no-print { display: none !important; }
   .frame { border: 0; }
 }
+
+/* Shipped credits with official art */
+.credit .shot { margin-bottom: 14px; }
+.credit .fine { margin-top: 10px; font-size: 12px; color: var(--dim); }
+.credit .fine a { color: inherit; }
+.credit .fine a:hover { color: var(--ink); }
