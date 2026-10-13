@@ -38,3 +38,7 @@
   and © line; God of War links its MobyGames credits page. Title is "Backyard Baseball (2026)". MCS handbook bans
   discussing projects online, so the resume page dropped the map-tile loading bullet. The resume PDF and the
   job-hunt resume source still carry that bullet, the old title and the 2023 thesis year: fix the source, rebuild.
+- Screenshots from the user's old Figma portfolio (public prototype; originals in git-ignored `inputs/figma/`, all
+  own work, no MCS). Stills upscaled with nearest-neighbour; gameplay GIFs converted to animated WebP
+  (`reprise-cover.webp`, `thesis-3.webp`). Still empty: `reprise-2.png`, `pixel-punch-2.png`. Sources are low-res
+  (300-600 px); higher-res captures from the games would look better.

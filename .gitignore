@@ -12,3 +12,6 @@ Thumbs.db
 desktop.ini
 .vscode/
 .idea/
+
+# Private source material (Figma exports, etc.)
+inputs/

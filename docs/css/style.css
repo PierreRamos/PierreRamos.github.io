@@ -227,3 +227,7 @@ dl.skills dt:first-of-type, dl.skills dt:first-of-type + dd { border-top: 0; pad
 .credit .fine { margin-top: 10px; font-size: 12px; color: var(--dim); }
 .credit .fine a { color: inherit; }
 .credit .fine a:hover { color: var(--ink); }
+
+/* Animated pixel-art clips are stored at native size; keep them crisp when scaled */
+.shot img[src$=".webp"] { image-rendering: pixelated; }
+.shot img.fit { object-fit: contain; background: #0d0d0d; }
