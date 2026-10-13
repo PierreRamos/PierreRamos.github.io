@@ -10,52 +10,39 @@
   <meta property="og:description" content="Resume of Pierre Carlo Ramos, Unity Gameplay and UI Programmer.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pierreramos.github.io/resume.html">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2312161c'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%235fd0a8' text-anchor='middle'%3EPR%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230d0d0d'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='900' font-size='20' fill='%23e9e7e2' text-anchor='middle'%3Er.%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <script>try { if (localStorage.getItem("theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}</script>
 </head>
 <body data-section="resume.html">
 <a class="skip-link" href="#content">Skip to content</a>
-<div class="layout">
-  <header class="sidebar">
-    <a class="name" href="index.html">Pierre Carlo Ramos</a>
-    <p class="role">Unity Gameplay &amp; UI Programmer</p>
-    <p class="tagline">I build gameplay systems and game UI in Unity, and draw the pixel art for my own games.</p>
-    <nav class="nav" aria-label="Main">
-      <a href="index.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="sidebar-footer">
-      <ul class="social">
-        <li><a href="https://github.com/PierreRamos">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/pierrecarloramos">LinkedIn</a></li>
-        <li><a href="https://pierrymarbles.itch.io">itch.io</a></li>
-      </ul>
-      <button class="theme-toggle" type="button" aria-pressed="false">Light mode</button>
-    </div>
-  </header>
-  <main id="content">
+<header class="bar">
+  <a class="logo" href="index.html" aria-label="Pierre Carlo Ramos, home">ramos.</a>
+  <div class="ticker cap" aria-hidden="true"><span>Manila <b class="clock">--:--:--</b> PHT &nbsp;/&nbsp; Unity &nbsp;/&nbsp; C# &nbsp;/&nbsp; Gameplay systems &nbsp;/&nbsp; Game UI &nbsp;/&nbsp; Save systems &nbsp;/&nbsp; Pixel art &nbsp;/&nbsp; PC · PlayStation · Xbox · Mobile</span></div>
+  <nav class="nav cap" id="nav" aria-label="Main">
+    <a href="index.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="theme-toggle cap" type="button" aria-pressed="false"><span>Light</span><i aria-hidden="true"></i></button>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><b></b><b></b><b></b></button>
+</header>
+<main id="content" class="frame">
     <header class="page-head">
-      <h1>Resume</h1>
+      <h1>resume.</h1>
       <p class="lead">Unity Gameplay &amp; UI Programmer · Metro Manila, Philippines (remote) ·
         <a href="mailto:pierrecarloramos.j@gmail.com">pierrecarloramos.j@gmail.com</a></p>
     </header>
     <p class="no-print"><a class="button primary" href="assets/Ramos_PierreCarlo_Resume.pdf" download>Download PDF</a></p>
-    <section aria-labelledby="summary">
-      <h2 id="summary">Summary</h2>
-      <p class="prose">Unity programmer with three years at a US game studio, credited on two shipped titles and
+    <section class="block" aria-labelledby="summary"><h2 id="summary">Summary</h2><div class="body"><p class="prose">Unity programmer with three years at a US game studio, credited on two shipped titles and
       building for PC, PlayStation, Xbox and mobile. A generalist across gameplay, UI/UX, animation and save systems,
       currently focused on UI. Also produces pixel art and 2D assets, so I can take a feature from code to finished
-      visuals.</p>
-    </section>
-    <section aria-labelledby="experience">
-      <h2 id="experience">Experience</h2>
-      <div class="entry">
+      visuals.</p></div></section>
+    <section class="block" aria-labelledby="experience"><h2 id="experience">Experience</h2><div class="body"><div class="entry">
         <div class="entry-head"><h3>Unity Programmer · Mega Cat Studios</h3><span class="when">Nov 2023 – Present</span></div>
         <p class="sub">Remote contractor for a US studio</p>
         <ul>
@@ -69,11 +56,8 @@
       <div class="entry">
         <div class="entry-head"><h3>Business Intelligence Intern · Solutions Exchange, Inc.</h3><span class="when">Feb 2023 – May 2023</span></div>
         <ul><li>Built BI dashboards and data visualizations in Looker Studio.</li></ul>
-      </div>
-    </section>
-    <section aria-labelledby="projects">
-      <h2 id="projects">Projects</h2>
-      <div class="entry">
+      </div></div></section>
+    <section class="block" aria-labelledby="projects"><h2 id="projects">Projects</h2><div class="body"><div class="entry">
         <div class="entry-head"><h3><a href="reprise.html">Reprise</a></h3><span class="when">Unity · C# · WebGL</span></div>
         <ul><li>Solo game in development bringing Sekiro-style counter combat to gunplay, with an event-driven architecture. All code and pixel art by me; early prototype playable in the browser.</li></ul>
       </div>
@@ -86,30 +70,22 @@
         <ul><li>Jam game on the theme "Roles Reversed": Fruit Ninja flipped, where players catch and merge fruit instead of slicing it. Built the game and most of its assets, with a partner contributing additional art.</li></ul>
       </div>
       <div class="entry">
-        <div class="entry-head"><h3><a href="thesis.html">Undergraduate Thesis: MCTS for Dynamic Difficulty Adjustment</a></h3><span class="when">2023 · Defended</span></div>
+        <div class="entry-head"><h3><a href="thesis.html">Undergraduate Thesis: MCTS for Dynamic Difficulty Adjustment</a></h3><span class="when">2022 · Defended</span></div>
         <ul><li>Designed and built a 2D arcade shooter whose difficulty adapts to the player using the Monte Carlo Tree Search algorithm. Roles: game designer, developer and AI developer.</li></ul>
-      </div>
-    </section>
-    <section aria-labelledby="skills">
-      <h2 id="skills">Skills</h2>
-      <dl class="skills">
+      </div></div></section>
+    <section class="block" aria-labelledby="skills"><h2 id="skills">Skills</h2><div class="body"><dl class="skills">
         <dt>Programming</dt><dd>C# (advanced), Java, JavaScript, HTML/CSS</dd>
         <dt>Unity</dt><dd>Gameplay systems, UI (uGUI, UI Toolkit), animation and physics, save systems, Addressables, editor tooling, profiling</dd>
         <dt>Platforms</dt><dd>PC, PlayStation, Xbox, mobile, WebGL</dd>
         <dt>Workflow</dt><dd>Git (branching workflows), Jira, Mantis Bug Tracker, VS Code</dd>
         <dt>Art</dt><dd>Pixel art, 2D illustration, UI art · Aseprite, Paint Tool SAI 2, Clip Studio Paint</dd>
-      </dl>
-    </section>
-    <section aria-labelledby="edu">
-      <h2 id="edu">Education</h2>
-      <div class="entry">
+      </dl></div></section>
+    <section class="block" aria-labelledby="edu"><h2 id="edu">Education</h2><div class="body"><div class="entry">
         <div class="entry-head"><h3>BS Computer Science, Major in Game Development · University of Santo Tomas</h3><span class="when">2019 – 2023</span></div>
         <ul><li>Dean's Lister, 2020 – 2023</li></ul>
-      </div>
-    </section>
-    <footer class="site-footer">© 2026 Pierre Carlo Ramos · Hand-built with HTML, CSS and a little JavaScript.</footer>
+      </div></div></section>
+  <footer class="foot cap"><span>© 2026 Pierre Carlo Ramos</span><span>Hand-built · HTML, CSS, a little JS</span></footer>
   </main>
-</div>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -10,36 +10,28 @@
   <meta property="og:description" content="Pixel Punch, a solo Unity fighting-game prototype in the style of One Finger Death Punch.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pierreramos.github.io/pixel-punch.html">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2312161c'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%235fd0a8' text-anchor='middle'%3EPR%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230d0d0d'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='900' font-size='20' fill='%23e9e7e2' text-anchor='middle'%3Er.%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <script>try { if (localStorage.getItem("theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}</script>
 </head>
 <body data-section="index.html">
 <a class="skip-link" href="#content">Skip to content</a>
-<div class="layout">
-  <header class="sidebar">
-    <a class="name" href="index.html">Pierre Carlo Ramos</a>
-    <p class="role">Unity Gameplay &amp; UI Programmer</p>
-    <p class="tagline">I build gameplay systems and game UI in Unity, and draw the pixel art for my own games.</p>
-    <nav class="nav" aria-label="Main">
-      <a href="index.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="sidebar-footer">
-      <ul class="social">
-        <li><a href="https://github.com/PierreRamos">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/pierrecarloramos">LinkedIn</a></li>
-        <li><a href="https://pierrymarbles.itch.io">itch.io</a></li>
-      </ul>
-      <button class="theme-toggle" type="button" aria-pressed="false">Light mode</button>
-    </div>
-  </header>
-  <main id="content">
+<header class="bar">
+  <a class="logo" href="index.html" aria-label="Pierre Carlo Ramos, home">ramos.</a>
+  <div class="ticker cap" aria-hidden="true"><span>Manila <b class="clock">--:--:--</b> PHT &nbsp;/&nbsp; Unity &nbsp;/&nbsp; C# &nbsp;/&nbsp; Gameplay systems &nbsp;/&nbsp; Game UI &nbsp;/&nbsp; Save systems &nbsp;/&nbsp; Pixel art &nbsp;/&nbsp; PC · PlayStation · Xbox · Mobile</span></div>
+  <nav class="nav cap" id="nav" aria-label="Main">
+    <a href="index.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="theme-toggle cap" type="button" aria-pressed="false"><span>Light</span><i aria-hidden="true"></i></button>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><b></b><b></b><b></b></button>
+</header>
+<main id="content" class="frame">
     <a class="back" href="index.html">← All projects</a>
     <header class="page-head">
       <p class="note">Personal prototype · 2023</p>
@@ -48,12 +40,9 @@
     </header>
     <figure class="shot hero-shot" data-file="pixel-punch-cover.png"><img src="assets/img/pixel-punch-cover.png" alt="Pixel Punch key art" loading="lazy"></figure>
     <dl class="facts"><div><dt>Role</dt><dd>Solo: code and art</dd></div><div><dt>Engine</dt><dd>Unity, C#</dd></div><div><dt>Year</dt><dd>2023</dd></div><div><dt>Status</dt><dd>Prototype, back in development</dd></div></dl>
-    <section class="prose">
-        <h2>Overview</h2>
-        <p>Pixel Punch is a 2D brawler inspired by <i>One Finger Death Punch</i>: enemies rush in from both sides and
-        every input counts. I wrote all of the code and drew and animated every sprite.</p>
-        <h2>What I built</h2>
-        <ul>
+    <section class="block"><h2>Overview</h2><div class="body"><p>Pixel Punch is a 2D brawler inspired by <i>One Finger Death Punch</i>: enemies rush in from both sides and
+        every input counts. I wrote all of the code and drew and animated every sprite.</p></div></section>
+    <section class="block"><h2>What I built</h2><div class="body"><ul>
           <li>All gameplay logic: player attacks, dash, health and a special meter.</li>
           <li>Enemy spawning driven by a difficulty manager, with object pooling for enemies and particle effects.</li>
           <li>Enemy variants, including elites that can't be beaten with a single hit: each one carries nodes, and
@@ -61,18 +50,12 @@
           <li>A one-on-one hold-battle mode with its own timer and input prompts.</li>
           <li>Game feel: camera shake, hit indicators and pooled particle effects.</li>
           <li>An event-driven architecture that keeps player, enemy and UI systems decoupled.</li>
-        </ul>
-        <h2>What's next</h2>
-        <p>I'm back to work on Pixel Punch and aiming to take it from prototype to a finished game.</p>
-    </section>
-      <section aria-labelledby="links"><h2 id="links">Links</h2><ul class="links"><li><a class="button primary" href="https://pierrymarbles.itch.io/punch-game">Download on itch.io ↗</a></li><li><a class="button" href="https://github.com/PierreRamos/PixelPunch">Source on GitHub ↗</a></li></ul></section>
-    <section aria-labelledby="gallery">
-      <h2 id="gallery">Screenshots</h2>
-      <div class="gallery"><figure class="shot" data-file="pixel-punch-1.png"><img src="assets/img/pixel-punch-1.png" alt="Pixel Punch screenshot" loading="lazy"></figure><figure class="shot" data-file="pixel-punch-2.png"><img src="assets/img/pixel-punch-2.png" alt="Pixel Punch screenshot" loading="lazy"></figure></div>
-    </section>
-    <footer class="site-footer">© 2026 Pierre Carlo Ramos · Hand-built with HTML, CSS and a little JavaScript.</footer>
+        </ul></div></section>
+    <section class="block"><h2>What's next</h2><div class="body"><p>I'm back to work on Pixel Punch and aiming to take it from prototype to a finished game.</p></div></section>
+      <section class="block" aria-labelledby="links"><h2 id="links">Links</h2><div class="body"><ul class="links"><li><a class="button primary" href="https://pierrymarbles.itch.io/punch-game">Download on itch.io ↗</a></li><li><a class="button" href="https://github.com/PierreRamos/PixelPunch">Source on GitHub ↗</a></li></ul></div></section>
+    <section class="block" aria-labelledby="gallery"><h2 id="gallery">Screenshots</h2><div class="body"><div class="gallery"><figure class="shot" data-file="pixel-punch-1.png"><img src="assets/img/pixel-punch-1.png" alt="Pixel Punch screenshot" loading="lazy"></figure><figure class="shot" data-file="pixel-punch-2.png"><img src="assets/img/pixel-punch-2.png" alt="Pixel Punch screenshot" loading="lazy"></figure></div></div></section>
+  <footer class="foot cap"><span>© 2026 Pierre Carlo Ramos</span><span>Hand-built · HTML, CSS, a little JS</span></footer>
   </main>
-</div>
 <script src="js/main.js"></script>
 </body>
 </html>

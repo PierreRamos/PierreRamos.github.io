@@ -10,36 +10,28 @@
   <meta property="og:description" content="Smoothie Splash: Fruit Merger, a GMTK Game Jam 2023 entry that turns Fruit Ninja around.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pierreramos.github.io/smoothie-splash.html">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2312161c'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%235fd0a8' text-anchor='middle'%3EPR%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230d0d0d'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='900' font-size='20' fill='%23e9e7e2' text-anchor='middle'%3Er.%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <script>try { if (localStorage.getItem("theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}</script>
 </head>
 <body data-section="index.html">
 <a class="skip-link" href="#content">Skip to content</a>
-<div class="layout">
-  <header class="sidebar">
-    <a class="name" href="index.html">Pierre Carlo Ramos</a>
-    <p class="role">Unity Gameplay &amp; UI Programmer</p>
-    <p class="tagline">I build gameplay systems and game UI in Unity, and draw the pixel art for my own games.</p>
-    <nav class="nav" aria-label="Main">
-      <a href="index.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="sidebar-footer">
-      <ul class="social">
-        <li><a href="https://github.com/PierreRamos">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/pierrecarloramos">LinkedIn</a></li>
-        <li><a href="https://pierrymarbles.itch.io">itch.io</a></li>
-      </ul>
-      <button class="theme-toggle" type="button" aria-pressed="false">Light mode</button>
-    </div>
-  </header>
-  <main id="content">
+<header class="bar">
+  <a class="logo" href="index.html" aria-label="Pierre Carlo Ramos, home">ramos.</a>
+  <div class="ticker cap" aria-hidden="true"><span>Manila <b class="clock">--:--:--</b> PHT &nbsp;/&nbsp; Unity &nbsp;/&nbsp; C# &nbsp;/&nbsp; Gameplay systems &nbsp;/&nbsp; Game UI &nbsp;/&nbsp; Save systems &nbsp;/&nbsp; Pixel art &nbsp;/&nbsp; PC · PlayStation · Xbox · Mobile</span></div>
+  <nav class="nav cap" id="nav" aria-label="Main">
+    <a href="index.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="theme-toggle cap" type="button" aria-pressed="false"><span>Light</span><i aria-hidden="true"></i></button>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><b></b><b></b><b></b></button>
+</header>
+<main id="content" class="frame">
     <a class="back" href="index.html">← All projects</a>
     <header class="page-head">
       <p class="note">GMTK Game Jam 2023</p>
@@ -48,29 +40,19 @@
     </header>
     <figure class="shot hero-shot" data-file="smoothie-splash-cover.png"><img src="assets/img/smoothie-splash-cover.png" alt="Smoothie Splash: Fruit Merger key art" loading="lazy"></figure>
     <dl class="facts"><div><dt>Role</dt><dd>Programmer, most art</dd></div><div><dt>Team</dt><dd>2 people</dd></div><div><dt>Engine</dt><dd>Unity, WebGL</dd></div><div><dt>Made for</dt><dd>GMTK Game Jam 2023</dd></div></dl>
-    <section class="prose">
-        <h2>Overview</h2>
-        <p>Instead of slicing fruit, you catch it. Merge two fruits into a juice ball, then dunk it in the smoothie cup
-        before the fruit gets away.</p>
-        <h2>My role</h2>
-        <p>I built the game and made most of its assets during the jam, with Nymphel Jhoy M. Rafanan contributing
-        additional art.</p>
-        <h2>What I learned</h2>
-        <p>This was an early project. The two hardest parts were making drag controls feel responsive and moving the
+    <section class="block"><h2>Overview</h2><div class="body"><p>Instead of slicing fruit, you catch it. Merge two fruits into a juice ball, then dunk it in the smoothie cup
+        before the fruit gets away.</p></div></section>
+    <section class="block"><h2>My role</h2><div class="body"><p>I built the game and made most of its assets during the jam, with Nymphel Jhoy M. Rafanan contributing
+        additional art.</p></div></section>
+    <section class="block"><h2>What I learned</h2><div class="body"><p>This was an early project. The two hardest parts were making drag controls feel responsive and moving the
         game cleanly between its states: menus, play, merging and scoring. I wrote my own simple state machine
-        for it. It worked for the jam, but it showed me why clear states and transitions matter.</p>
-        <h2>What's next</h2>
-        <p>I plan to revisit Smoothie Splash and rebuild its core with what I know now, starting with a proper state
-        machine and polished controls.</p>
-    </section>
-      <section aria-labelledby="links"><h2 id="links">Links</h2><ul class="links"><li><a class="button primary" href="https://pierrymarbles.itch.io/smoothie-splash-fruit-merger">Play in the browser ↗</a></li></ul></section>
-    <section aria-labelledby="gallery">
-      <h2 id="gallery">Screenshots</h2>
-      <div class="gallery"><figure class="shot" data-file="smoothie-splash-1.png"><img src="assets/img/smoothie-splash-1.png" alt="Smoothie Splash: Fruit Merger screenshot" loading="lazy"></figure><figure class="shot" data-file="smoothie-splash-2.png"><img src="assets/img/smoothie-splash-2.png" alt="Smoothie Splash: Fruit Merger screenshot" loading="lazy"></figure></div>
-    </section>
-    <footer class="site-footer">© 2026 Pierre Carlo Ramos · Hand-built with HTML, CSS and a little JavaScript.</footer>
+        for it. It worked for the jam, but it showed me why clear states and transitions matter.</p></div></section>
+    <section class="block"><h2>What's next</h2><div class="body"><p>I plan to revisit Smoothie Splash and rebuild its core with what I know now, starting with a proper state
+        machine and polished controls.</p></div></section>
+      <section class="block" aria-labelledby="links"><h2 id="links">Links</h2><div class="body"><ul class="links"><li><a class="button primary" href="https://pierrymarbles.itch.io/smoothie-splash-fruit-merger">Play in the browser ↗</a></li></ul></div></section>
+    <section class="block" aria-labelledby="gallery"><h2 id="gallery">Screenshots</h2><div class="body"><div class="gallery"><figure class="shot" data-file="smoothie-splash-1.png"><img src="assets/img/smoothie-splash-1.png" alt="Smoothie Splash: Fruit Merger screenshot" loading="lazy"></figure><figure class="shot" data-file="smoothie-splash-2.png"><img src="assets/img/smoothie-splash-2.png" alt="Smoothie Splash: Fruit Merger screenshot" loading="lazy"></figure></div></div></section>
+  <footer class="foot cap"><span>© 2026 Pierre Carlo Ramos</span><span>Hand-built · HTML, CSS, a little JS</span></footer>
   </main>
-</div>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -22,5 +22,5 @@ Own public repo: `PierreRamos/PierreRamos.github.io` (nested in the monorepo, ig
 - No phone number on any page or in `docs/assets/Ramos_PierreCarlo_Resume.pdf`. Rebuild that PDF from a copy of the
   resume with the phone line removed (headless Edge `--print-to-pdf`), then check it is 1 page with no `+63`.
 - Write only facts from the career profile, the resume or the user. Unknown details stay out; ask instead.
-- The sidebar is duplicated in all eight pages; a sidebar change touches every page.
+- The top bar (logo, ticker, nav, theme toggle) is duplicated in all eight pages; a bar change touches every page.
 - Screenshot filenames are listed in `README.md`; keep it in sync when slots change.

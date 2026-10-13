@@ -10,96 +10,96 @@
   <meta property="og:description" content="Portfolio of Pierre Carlo Ramos, a Unity gameplay and UI programmer in Metro Manila working remotely.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pierreramos.github.io/">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2312161c'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%235fd0a8' text-anchor='middle'%3EPR%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230d0d0d'/%3E%3Ctext x='16' y='23' font-family='Arial' font-weight='900' font-size='20' fill='%23e9e7e2' text-anchor='middle'%3Er.%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
   <link rel="stylesheet" href="css/style.css">
   <script>try { if (localStorage.getItem("theme") === "light") document.documentElement.dataset.theme = "light"; } catch (e) {}</script>
 </head>
 <body data-section="index.html">
 <a class="skip-link" href="#content">Skip to content</a>
-<div class="layout">
-  <header class="sidebar">
-    <a class="name" href="index.html">Pierre Carlo Ramos</a>
-    <p class="role">Unity Gameplay &amp; UI Programmer</p>
-    <p class="tagline">I build gameplay systems and game UI in Unity, and draw the pixel art for my own games.</p>
-    <nav class="nav" aria-label="Main">
-      <a href="index.html">Work</a>
-      <a href="about.html">About</a>
-      <a href="resume.html">Resume</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="sidebar-footer">
-      <ul class="social">
-        <li><a href="https://github.com/PierreRamos">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/pierrecarloramos">LinkedIn</a></li>
-        <li><a href="https://pierrymarbles.itch.io">itch.io</a></li>
-      </ul>
-      <button class="theme-toggle" type="button" aria-pressed="false">Light mode</button>
+<header class="bar">
+  <a class="logo" href="index.html" aria-label="Pierre Carlo Ramos, home">ramos.</a>
+  <div class="ticker cap" aria-hidden="true"><span>Manila <b class="clock">--:--:--</b> PHT &nbsp;/&nbsp; Unity &nbsp;/&nbsp; C# &nbsp;/&nbsp; Gameplay systems &nbsp;/&nbsp; Game UI &nbsp;/&nbsp; Save systems &nbsp;/&nbsp; Pixel art &nbsp;/&nbsp; PC · PlayStation · Xbox · Mobile</span></div>
+  <nav class="nav cap" id="nav" aria-label="Main">
+    <a href="index.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="theme-toggle cap" type="button" aria-pressed="false"><span>Light</span><i aria-hidden="true"></i></button>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><b></b><b></b><b></b></button>
+</header>
+<main id="content" class="frame home">
+    <div class="row hero-media">
+      <figure class="shot" data-file="reprise-cover.png"><img src="assets/img/reprise-cover.png" alt="Reprise screenshot"></figure>
+      <figure class="shot" data-file="pixel-punch-cover.png"><img src="assets/img/pixel-punch-cover.png" alt="Pixel Punch screenshot"></figure>
     </div>
-  </header>
-  <main id="content">
-    <h1 class="sr-only">Pierre Carlo Ramos, Unity programmer</h1>
-    <section aria-label="Introduction">
-      <p class="lead">For the past three years I've been a <strong>Unity programmer at Mega Cat Studios</strong>, building
-      gameplay, UI and save systems for games on PC, PlayStation, Xbox and mobile. On my own time I make small games
-      end to end, from code to pixel art.</p>
-    </section>
+    <div class="row hero-name">
+      <h1 class="big">ramos.<span class="sr-only"> Pierre Carlo Ramos, Unity programmer</span></h1>
+      <p class="roles"><span>Unity Programmer</span><span>Gameplay &amp; UI</span><span>Pixel Art</span></p>
+      <div class="mark" aria-hidden="true">
+        <svg viewBox="0 0 8 8" shape-rendering="crispEdges" fill="currentColor"><path d="M1 1h4v1H1zM1 2h1v5H1zM5 2h1v2H5zM2 4h3v1H2zM3 5h1v1H3zM4 6h1v1H4zM5 6h1v1H5z"/></svg>
+      </div>
+    </div>
 
-    <section aria-labelledby="work">
-      <h2 id="work">Selected projects</h2>
-      <ul class="project-list">
-      <li class="project-row">
-        <figure class="shot" data-file="reprise-cover.png"><img src="assets/img/reprise-cover.png" alt="Reprise screenshot" loading="lazy"></figure>
-        <div>
-          <p class="kicker">Personal · in development</p>
-          <h3><a href="reprise.html">Reprise</a></h3>
-          <p>A solo action game that brings Sekiro-style counter combat to gunplay, built on an event-driven architecture.</p>
-          <ul class="tags"><li>Unity</li><li>C#</li><li>Pixel art</li><li>Solo</li></ul>
-        </div>
-      </li>
-      <li class="project-row">
-        <figure class="shot" data-file="pixel-punch-cover.png"><img src="assets/img/pixel-punch-cover.png" alt="Pixel Punch screenshot" loading="lazy"></figure>
-        <div>
-          <p class="kicker">Personal prototype · 2023</p>
-          <h3><a href="pixel-punch.html">Pixel Punch</a></h3>
-          <p>A fighting-game prototype in the style of One Finger Death Punch. All code and art by me.</p>
-          <ul class="tags"><li>Unity</li><li>C#</li><li>Pixel art</li><li>Solo</li></ul>
-        </div>
-      </li>
-      <li class="project-row">
-        <figure class="shot" data-file="smoothie-splash-cover.png"><img src="assets/img/smoothie-splash-cover.png" alt="Smoothie Splash: Fruit Merger screenshot" loading="lazy"></figure>
-        <div>
-          <p class="kicker">GMTK Game Jam 2023</p>
-          <h3><a href="smoothie-splash.html">Smoothie Splash: Fruit Merger</a></h3>
-          <p>Fruit Ninja, reversed: catch flying fruit, merge it into juice and dunk it in the cup. Playable in the browser.</p>
-          <ul class="tags"><li>Unity</li><li>WebGL</li><li>Game jam</li><li>Team of 2</li></ul>
-        </div>
-      </li>
-      <li class="project-row">
-        <figure class="shot" data-file="thesis-cover.png"><img src="assets/img/thesis-cover.png" alt="MCTS for Dynamic Difficulty Adjustment screenshot" loading="lazy"></figure>
-        <div>
-          <p class="kicker">Undergraduate thesis · 2023</p>
-          <h3><a href="thesis.html">MCTS for Dynamic Difficulty Adjustment</a></h3>
-          <p>A 2D arcade shooter whose difficulty adapts to the player using Monte Carlo Tree Search.</p>
-          <ul class="tags"><li>Unity</li><li>Game AI</li><li>Research</li></ul>
-        </div>
-      </li>
-      </ul>
-    </section>
+    <div class="section-head"><p class="cap">The</p><h2 class="big">developer.</h2></div>
+    <div class="row bio">
+      <p>For the past three years I've been a Unity programmer at Mega Cat Studios, building gameplay, UI and save
+      systems for games on PC, PlayStation, Xbox and mobile. On my own time I make small games end to end, from code to
+      pixel art.</p>
+      <dl class="facts">
+        <div><dt>Years in Unity, professionally</dt><dd>3</dd></div>
+        <div><dt>Platforms built for</dt><dd>4</dd></div>
+        <div><dt>Studio</dt><dd>Mega Cat</dd></div>
+        <div><dt>Based in</dt><dd>Manila</dd></div>
+      </dl>
+    </div>
 
-    <section aria-labelledby="credits">
-      <h2 id="credits">Shipped credits</h2>
-      <ul class="credits">
-        <li><span class="title"><i>God of War: Sons of Sparta</i></span><span class="meta">Mega Cat Studios · Unity Programmer</span></li>
-        <li><span class="title"><i>Backyard Baseball 2026</i></span><span class="meta">Mega Cat Studios · Unity Programmer</span></li>
-      </ul>
-      <p class="note">Studio projects are listed as credits only.</p>
-    </section>
-    <footer class="site-footer">© 2026 Pierre Carlo Ramos · Hand-built with HTML, CSS and a little JavaScript.</footer>
+    <div class="section-head"><p class="cap">Selected</p><h2 class="big" id="work">works.</h2></div>
+    <div class="row works">
+      <a class="work" href="reprise.html">
+        <header class="cap"><span>01</span><span>Personal · In development</span></header>
+        <figure class="shot" data-file="reprise-cover.png"><img src="assets/img/reprise-cover.png" alt="" loading="lazy"></figure>
+        <footer><h3>Reprise</h3><p>A solo action game that brings Sekiro-style counter combat to gunplay, built on an event-driven architecture.</p></footer>
+      </a>
+      <a class="work" href="pixel-punch.html">
+        <header class="cap"><span>02</span><span>Prototype · 2023</span></header>
+        <figure class="shot" data-file="pixel-punch-cover.png"><img src="assets/img/pixel-punch-cover.png" alt="" loading="lazy"></figure>
+        <footer><h3>Pixel Punch</h3><p>A fighting-game prototype in the style of One Finger Death Punch. All code and art by me.</p></footer>
+      </a>
+      <a class="work" href="smoothie-splash.html">
+        <header class="cap"><span>03</span><span>GMTK Game Jam · 2023</span></header>
+        <figure class="shot" data-file="smoothie-splash-cover.png"><img src="assets/img/smoothie-splash-cover.png" alt="" loading="lazy"></figure>
+        <footer><h3>Smoothie Splash</h3><p>Fruit Ninja, reversed: catch flying fruit, merge it into juice and dunk it in the cup. Playable in the browser.</p></footer>
+      </a>
+      <a class="work" href="thesis.html">
+        <header class="cap"><span>04</span><span>Thesis · 2022</span></header>
+        <figure class="shot" data-file="thesis-cover.png"><img src="assets/img/thesis-cover.png" alt="" loading="lazy"></figure>
+        <footer><h3>MCTS Difficulty</h3><p>A 2D arcade shooter whose difficulty adapts to the player using Monte Carlo Tree Search.</p></footer>
+      </a>
+    </div>
+    <a class="marquee cap" href="reprise.html" aria-label="Now building: Reprise"><span aria-hidden="true">Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; Now building: Reprise &nbsp;/&nbsp; </span></a>
+
+    <div class="row credit-row">
+      <div><p class="cap">Shipped credits</p><p>Studio projects are listed as credits only.</p></div>
+      <div><p class="cap">Mega Cat Studios</p><h3><i>God of War: Sons of Sparta</i></h3><p>Unity Programmer</p></div>
+      <div><p class="cap">Mega Cat Studios</p><h3><i>Backyard Baseball 2026</i></h3><p>Unity Programmer</p></div>
+    </div>
+
+    <div class="section-head"><p class="cap">Say</p><h2 class="big">hello.</h2></div>
+    <div class="row say">
+      <a class="mail" href="mailto:pierrecarloramos.j@gmail.com">pierrecarloramos.j<br>@gmail.com</a>
+      <div class="out cap">
+        <a href="https://github.com/PierreRamos">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="https://www.linkedin.com/in/pierrecarloramos">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="https://pierrymarbles.itch.io">itch.io <span aria-hidden="true">↗</span></a>
+        <a href="assets/Ramos_PierreCarlo_Resume.pdf" download>Resume PDF <span aria-hidden="true">↓</span></a>
+      </div>
+    </div>
+  <footer class="foot cap"><span>© 2026 Pierre Carlo Ramos</span><span>Hand-built · HTML, CSS, a little JS</span></footer>
   </main>
-</div>
 <script src="js/main.js"></script>
 </body>
 </html>

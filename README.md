@@ -12,7 +12,7 @@ Image slots show their expected filename until the file exists in `docs/assets/i
 | Reprise | `reprise-cover.png`, `reprise-1.png`, `reprise-2.png` |
 | Pixel Punch | `pixel-punch-cover.png`, `pixel-punch-1.png`, `pixel-punch-2.png` |
 | Smoothie Splash | `smoothie-splash-cover.png`, `smoothie-splash-1.png`, `smoothie-splash-2.png` |
-| Thesis | `thesis-cover.png`, `thesis-1.png` |
+| Thesis | `thesis-cover.png`, `thesis-1.png`, `thesis-2.png` |
 
 The `-cover` image appears on the home page and at the top of the project page.
 
